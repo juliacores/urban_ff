@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b514300c-f153-4912-8bde-bae8df8f9c73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Runner/GoogleService-Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dialog.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/GoogleService-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/GoogleService-Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/analytics.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/analytics.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/form.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/form.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menu.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/profile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1rHt2MsbvM6cJ0OWysRCNLuQnQ0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/fonts" />
+      <recent name="$PROJECT_DIR$/ios/Runner" />
+      <recent name="$PROJECT_DIR$/ios" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b514300c-f153-4912-8bde-bae8df8f9c73" name="Default Changelist" comment="" />
+      <created>1618644634113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618644634113</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1170" height="430" key="GridCell.Tab.0.bottom" timestamp="1618662631251">
+      <screen x="79" y="25" width="1601" height="1025" />
+    </state>
+    <state width="1170" height="254" key="GridCell.Tab.0.bottom/72.25.1608.1025@72.25.1608.1025" timestamp="1618660367667" />
+    <state width="1170" height="455" key="GridCell.Tab.0.bottom/75.25.1605.1025@75.25.1605.1025" timestamp="1618661254144" />
+    <state width="1170" height="430" key="GridCell.Tab.0.bottom/79.25.1601.1025@79.25.1601.1025" timestamp="1618662631251" />
+    <state width="1170" height="430" key="GridCell.Tab.0.center" timestamp="1618662631250">
+      <screen x="79" y="25" width="1601" height="1025" />
+    </state>
+    <state width="1170" height="254" key="GridCell.Tab.0.center/72.25.1608.1025@72.25.1608.1025" timestamp="1618660367667" />
+    <state width="1170" height="455" key="GridCell.Tab.0.center/75.25.1605.1025@75.25.1605.1025" timestamp="1618661254144" />
+    <state width="1170" height="430" key="GridCell.Tab.0.center/79.25.1601.1025@79.25.1601.1025" timestamp="1618662631250" />
+    <state width="1170" height="430" key="GridCell.Tab.0.left" timestamp="1618662631249">
+      <screen x="79" y="25" width="1601" height="1025" />
+    </state>
+    <state width="1170" height="254" key="GridCell.Tab.0.left/72.25.1608.1025@72.25.1608.1025" timestamp="1618660367667" />
+    <state width="1170" height="455" key="GridCell.Tab.0.left/75.25.1605.1025@75.25.1605.1025" timestamp="1618661254144" />
+    <state width="1170" height="430" key="GridCell.Tab.0.left/79.25.1601.1025@79.25.1601.1025" timestamp="1618662631249" />
+    <state width="1170" height="430" key="GridCell.Tab.0.right" timestamp="1618662631250">
+      <screen x="79" y="25" width="1601" height="1025" />
+    </state>
+    <state width="1170" height="254" key="GridCell.Tab.0.right/72.25.1608.1025@72.25.1608.1025" timestamp="1618660367667" />
+    <state width="1170" height="455" key="GridCell.Tab.0.right/75.25.1605.1025@75.25.1605.1025" timestamp="1618661254144" />
+    <state width="1170" height="430" key="GridCell.Tab.0.right/79.25.1601.1025@79.25.1601.1025" timestamp="1618662631250" />
+    <state x="351" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1618661612149">
+      <screen x="79" y="25" width="1601" height="1025" />
+    </state>
+    <state x="351" y="238" width="670" height="676" key="search.everywhere.popup/79.25.1601.1025@79.25.1601.1025" timestamp="1618661612149" />
+  </component>
+</project>
