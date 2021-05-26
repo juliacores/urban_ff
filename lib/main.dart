@@ -1,12 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quiz/analytics.dart';
-import 'package:quiz/home.dart';
-import 'package:quiz/profile.dart';
+import 'package:quiz/Screens/analytics.dart';
+import 'package:quiz/Screens/home.dart';
+import 'package:quiz/Screens/problems_screen.dart';
+import 'package:quiz/Screens/profile.dart';
+import 'Screens/problems-map.dart';
 import 'constants.dart';
 import 'constants.dart';
-import 'form.dart';
+import 'Screens/form.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -50,6 +52,8 @@ class MyApp extends StatelessWidget {
         Forma.routeName:(ctx)=>Forma(),
         Profile.routeName:(ctx)=>Profile(),
         Analytics.routeName:(ctx)=>Analytics(),
+        ProblemsListScreen.routeName:(ctx)=>ProblemsListScreen(),
+        ProblemsMap.routeName:(ctx)=>ProblemsMap(),
       },
     );
   }

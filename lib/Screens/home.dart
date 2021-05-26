@@ -3,10 +3,10 @@ import 'dart:io' as io;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'constants.dart';
+import '../constants.dart';
 import 'form.dart';
-import 'header.dart';
-import 'menu.dart';
+import '../modules/elements/header.dart';
+import '../modules/menu.dart';
 
 class Home extends StatelessWidget {
   static String routeName = '/';

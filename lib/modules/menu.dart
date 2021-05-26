@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quiz/analytics.dart';
-import 'package:quiz/home.dart';
-import 'package:quiz/profile.dart';
+import 'package:quiz/Screens/analytics.dart';
+import 'package:quiz/Screens/home.dart';
+import 'package:quiz/Screens/profile.dart';
 
-import 'constants.dart';
+import '../constants.dart';
 
 
 class BottomNavBar extends StatefulWidget {

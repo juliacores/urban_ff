@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'constants.dart';
-import 'constants.dart';
-import 'header.dart';
-import 'menu.dart';
+import 'package:quiz/Screens/problems-map.dart';
+import 'package:quiz/Screens/problems_screen.dart';
+import '../constants.dart';
+import '../constants.dart';
+import '../modules/elements/header.dart';
+import '../modules/menu.dart';
 
 class Analytics extends StatelessWidget {
   static String routeName = 'getAnalytics';
@@ -25,13 +27,16 @@ class Map extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(margin: EdgeInsets.all(10),
         child: FlatButton(
-            onPressed: null,
+            onPressed: (){
+              Navigator.of(context).pushNamed(ProblemsMap.routeName);
+            },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                     child: Row(children: [
                   Icon(CupertinoIcons.map, color: Constants.accent),
+                  SizedBox(width: 10,),
                   Text('Карта проблем', style: Constants().subheader),
                 ])),
                 Icon(CupertinoIcons.forward, color: Constants.black)
@@ -45,13 +50,16 @@ class Problems extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(margin: EdgeInsets.all(10),
         child: FlatButton(
-            onPressed: null,
+            onPressed: (){
+              Navigator.of(context).pushNamed(ProblemsListScreen.routeName);
+            },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                     child: Row(children: [
                   Icon(CupertinoIcons.chart_pie, color: Constants.accent),
+                      SizedBox(width: 10,),
                   Text('Список проблем', style: Constants().subheader),
                 ])),
                 Icon(CupertinoIcons.forward, color: Constants.black)

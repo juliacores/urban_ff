@@ -13,9 +13,9 @@ import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 import 'package:place_picker/place_picker.dart';
 
-import 'constants.dart';
-import 'dialog.dart';
-import 'header.dart';
+import '../constants.dart';
+import '../modules/dialog.dart';
+import '../modules/elements/header.dart';
 
 String problem = '',
     recomendation = '',
@@ -24,6 +24,7 @@ String problem = '',
     location = '';
 bool errorP = false, errorC = false, errorF = false, errorL = false;
 bool isUploading = false;
+double lat,lon;
 class Forma extends StatefulWidget {
 
   static String routeName = 'sendForma';
@@ -40,8 +41,8 @@ class _FormaState extends State<Forma> {
   final picker = ImagePicker();
 
 
-  Future getImage() async {
-    final pickedFile = await picker.getImage(source: ImageSource.camera);
+  Future getImage({bool isCamera = false}) async {
+    final pickedFile = await picker.getImage(source: isCamera? ImageSource.camera:ImageSource.gallery);
 
     setState(() {
       if (pickedFile != null) {
@@ -65,6 +66,8 @@ class _FormaState extends State<Forma> {
     print('location.formattedAddress ' + result.formattedAddress);
     setState(() {
       location = result.formattedAddress;
+      lat = result.latLng.latitude;
+      lon = result.latLng.longitude;
       errorL=false;
     });
   }
@@ -100,7 +103,9 @@ class _FormaState extends State<Forma> {
         "problem": problem,
         "location": location,
         "recommendation": recomendation == null ? '' : recomendation,
-        "photo_url": value
+        "photo_url": value,
+        'lat':lat,
+        'lon':lon
       }).then((value) {
         setState(() {
           isUploading = false;
@@ -203,6 +208,7 @@ class _FormaState extends State<Forma> {
 
 
 
+
 class Foto extends StatelessWidget {
   Function getImage;
 
@@ -222,7 +228,13 @@ class Foto extends StatelessWidget {
         ),
         margin: EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
         child: FlatButton(
-            onPressed: getImage,
+            onPressed: (){
+              showDialog(
+                context: context,
+                builder: (BuildContext context) => PhotoD(getImg: getImage,
+                ),
+              );
+            },
             child: Row(
               children: [
                 Icon(CupertinoIcons.photo_camera),
@@ -403,5 +415,80 @@ class Send extends StatelessWidget {
             child: isUploading?
             CircularProgressIndicator(backgroundColor: Colors.white30,)
                 :Text('Отправить сообщение', style: Constants().buttontext)));
+  }
+}
+
+class PhotoD extends StatelessWidget {
+  Function getImg;
+
+  PhotoD({@required this.getImg});
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Dialog(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+      elevation: 0.0,
+      backgroundColor: Colors.transparent,
+      child: dialogContent(context),
+    );
+  }
+
+  dialogContent(BuildContext context) {
+    const double padding = 16.0;
+    const double avatarRadius = 40.0;
+    return Container(
+        padding: EdgeInsets.only(
+          top: avatarRadius + padding,
+          left: padding,
+          right: padding,
+        ),
+        margin: EdgeInsets.only(top: avatarRadius),
+        decoration: new BoxDecoration(
+            color: Colors.white,
+            shape: BoxShape.rectangle,
+            borderRadius: BorderRadius.circular(padding),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black26,
+                blurRadius: 10.0,
+                offset: const Offset(0.0, 10.0),
+              )
+            ]),
+        child:
+        Column(mainAxisSize: MainAxisSize.min, // To make the card compact
+            children: <Widget>[
+              Text(
+                'Выберите источник фото',
+                style: TextStyle(
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+
+              SizedBox(height: 24.0),
+              Align(
+                  alignment: Alignment.center,
+                  child: FlatButton(
+
+                    onPressed: () {
+                      getImg(isCamera: true);
+                      Navigator.of(context).pop(); // To close the dialog
+                    },
+                    child: Text("Камера"),
+                  )),
+              Align(
+                  alignment: Alignment.center,
+                  child: FlatButton(
+
+                    onPressed: () {
+                      getImg(isCamera: false);
+                      Navigator.of(context).pop(); // To close the dialog
+                    },
+                    child: Text("Галерея"),
+                  ))
+            ]));
   }
 }
